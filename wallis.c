@@ -24,3 +24,15 @@ int main(void) {
   }
 }
 
+float wallis_pi(int n) 
+{  int j;
+float product = 1;
+float PI ;
+for(j=0;j<=n;j++)
+{             float M = (4*pow(j,2)) / (   (4*pow(j,2)) - 1  )  ;
+               product = product*M;
+               PI = M*2;
+}
+return PI;
+}         
+
