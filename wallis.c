@@ -29,7 +29,7 @@ float wallis_pi(int n)
 float product = 1;
 float PI ;
 for(j=0;j<=n;j++)
-{             float M = (4*pow(j,2)) / (   (4*pow(j,2)) - 1  )  ;
+{             float M = (4*j*j) / ((4*j*j) - 1)  ;
                product = product*M;
                PI = M*2;
 }
