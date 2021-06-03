@@ -41,12 +41,13 @@ int main(void) {
 
 float mc_pi(int p)
 {
+  int count1=0;
+  int count2=0;
   for(int j=0;j<p;j++)
   {
     float x= frandom();
     float y= frandom();
-    int count1=0;
-    int count2=0;
+
     float M=sqrt(x*x+y*y);
     if(M <1){
         count1++;
@@ -54,4 +55,8 @@ float mc_pi(int p)
     else
         count2++;
   }
+
+  float PI = (4*count1)/(count1+count2);
+  return PI;
+
 }
