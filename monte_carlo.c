@@ -39,16 +39,19 @@ int main(void) {
   }
 }
 
-float mc_pi(int p){
-  for(int j=0;j<20;j++){
-  float x= frandom();
-  float y= frandom();
-  int count1=0;
-  int count2=0;
-  float M=sqrt(x*x+y*y);
-  if(M <1){
-    int no_of_poi_cir =count1++; }
-   else{
-     count2++;}
- }
-
+float mc_pi(int p)
+{
+  for(int j=0;j<p;j++)
+  {
+    float x= frandom();
+    float y= frandom();
+    int count1=0;
+    int count2=0;
+    float M=sqrt(x*x+y*y);
+    if(M <1){
+        count1++;
+            }
+    else
+        count2++;
+  }
+}
