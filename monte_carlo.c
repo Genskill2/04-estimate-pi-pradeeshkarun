@@ -47,10 +47,8 @@ float mc_pi(int p){
   int count2=0;
   float M=sqrt(x*x+y*y);
   if(M <1){
-    int no_of_poi_cir =count1++;
-  }
+    int no_of_poi_cir =count1++; }
    else{
      count2++;}
-
-  }
+ }
 
