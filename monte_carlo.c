@@ -52,5 +52,5 @@ float mc_pi(int p){
    else{
      count2++;}
 
-
+  }
 
