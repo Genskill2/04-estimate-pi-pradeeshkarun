@@ -41,8 +41,8 @@ int main(void) {
 
 float mc_pi(int p)
 {
-  int count1=0;
-  int count2=0;
+  float count1=0.0;
+  float p1=(float)p;
   for(int j=0;j<p;j++)
   {
     float x= frandom();
@@ -52,11 +52,10 @@ float mc_pi(int p)
     if(M <1){
         count1++;
             }
-    else
-        count2++;
+  
   }
 
-  float PI = (4*count1)/(count1+count2);
+  float PI = (4*count1)/p1;
   return PI;
 
 }
